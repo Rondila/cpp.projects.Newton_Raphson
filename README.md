@@ -21,11 +21,11 @@ For example, to find the root of the equation f(x) = x² - 4:
 The method continues iterating until convergence.
 ## Files
 
-- `newton_raphson.cpp`: C++ implementation of the Newton-Raphson method.
+- `Source.cpp`: C++ implementation of the Newton-Raphson method.
 
 ## How to Compile and Run
 
 1. Ensure you have a C++ compiler installed (e.g., g++, clang++).
 2. Compile the program:
    ```bash
-   g++ newton_raphson.cpp -o newton_raphson
+   g++ Source.cpp.cpp -o newton_raphson
