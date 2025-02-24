@@ -2,26 +2,21 @@
 
 This repository contains a C++ implementation of the Newton-Raphson method for finding roots of polynomial functions .
 
-## Overview
+## Mathematical Explanation
 
-The Newton-Raphson method is an iterative technique for finding successively better approximations to the roots (or zeros) of a real-valued function.
-Given a function \( f(x) \) and its derivative \( f'(x) \), the method iteratively improves the approximation of the root (zero) of the function.
+The Newton-Raphson method is based on the idea of linear approximation. Given a function f(x) and its derivative f'(x), the method iteratively improves the approximation of the root (zero) of the function.
 
-1. **Initial Guess**: Start with an initial guess \( x_0 \).
-2. **Iteration Formula**: The next approximation \( x_{n+1} \) is calculated using the formula:
-   \[
-   x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}
-   \]
+1. **Initial Guess**: Start with an initial guess x₀.
+2. **Iteration Formula**: The next approximation xₙ₊₁ is calculated using the formula:
+   xₙ₊₁ = xₙ - (f(xₙ) / f'(xₙ))
 3. **Repeat**: This process is repeated until the difference between successive approximations is less than a specified tolerance or until a maximum number of iterations is reached.
 
 ### Example
 
-For example, to find the root of the equation \( f(x) = x^2 - 4 \):
-- The derivative \( f'(x) = 2x \).
-- If we start with an initial guess \( x_0 = 3 \):
-  \[
-  x_1 = x_0 - \frac{f(x_0)}{f'(x_0)} = 3 - \frac{(3^2 - 4)}{(2 \cdot 3)} = 3 - \frac{5}{6} \approx 2.17
-  \]
+For example, to find the root of the equation f(x) = x² - 4:
+- The derivative is f'(x) = 2x.
+- If we start with an initial guess x₀ = 3:
+   x₁ = x₀ - (f(x₀) / f'(x₀)) = 3 - ((3² - 4) / (2 * 3)) = 3 - (5 / 6) ≈ 2.17
 
 The method continues iterating until convergence.
 ## Files
