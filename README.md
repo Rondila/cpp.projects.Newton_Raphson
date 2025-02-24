@@ -28,4 +28,4 @@ The method continues iterating until convergence.
 1. Ensure you have a C++ compiler installed (e.g., g++, clang++).
 2. Compile the program:
    ```bash
-   g++ Source.cpp.cpp -o newton_raphson
+   g++ Source.cpp -o newton_raphson
